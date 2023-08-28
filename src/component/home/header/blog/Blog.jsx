@@ -6,14 +6,14 @@ const Blog = () => {
     {
       id: "1",
       date: "26 FEB 2019",
-      title: "The MOst POpule New Top Bussness Apps",
+      title: "The Most Popular New Top  Bussness",
       cover: "./asset/blog/blog1.jpg",
       category: "Technogly",
     },
     {
       id: "2",
       date: "26 FEB 2019",
-      title: "The Best Marketing to Management Tools",
+      title: "The Best Marketing to Management",
       cover: "./asset/blog/blog2.jpg",
       category: "Technogly",
     },
@@ -44,7 +44,7 @@ const Blog = () => {
                     </div>
                     <div className="text">
                       <span>{val.date}</span>
-                      <h2>{val.title}</h2>
+                      <h2>{val.title} </h2>
                       <a href="/">
                         Read More
                         <KeyboardDoubleArrowRightIcon className="icon" />
