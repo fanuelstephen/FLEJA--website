@@ -76,10 +76,10 @@ const Footer = () => {
 
         <div className="legal container">
           <p>Copyright @2023. All right reserved</p>
-          <label htmlFor="">
+          <label>
             Design & Developed by <span>GorkCoder</span> and Redesined by
             <span>
-              <strong> fanuelthesofteareDeveloper</strong>
+              <strong> Fanuel-The-Softeware-Developer</strong>
             </span>
           </label>
         </div>

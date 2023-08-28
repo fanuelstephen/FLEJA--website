@@ -27,8 +27,8 @@ const Blog = () => {
   ];
   return (
     <>
-      <div className="blog services">
-        <div className="container topMargin-blog">
+      <div className="blog  topMargin">
+        <div className="container">
           <div className="heading">
             <h3>LATEST BLOG</h3>
             <h1>Read Inpirational Story Every Week</h1>
