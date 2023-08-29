@@ -11,7 +11,7 @@ const Header = () => {
 
   window.addEventListener("scroll", () => {
     const header = document.querySelector("Header");
-    header.classList.toggle("active", window.scrollY > 180);
+    header.classList.toggle("active", window.scrollY > 280);
   });
   return (
     <>

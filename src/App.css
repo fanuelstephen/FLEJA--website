@@ -33,6 +33,7 @@ a {
   flex-direction: row;
   align-items: center;
   gap: 20px;
+  /* box-shadow: 0 2px 28px rgba(0, 0, 0, 10%); */
 }
 .header ul li {
   display: inline-block;
@@ -59,49 +60,11 @@ a {
   top: 0;
   left: 0;
   background: #fff;
-  box-shadow: 0 2px 28 rgba(0, 0, 0 6%);
+  box-shadow: 0 2px 28px rgba(0, 0, 0, 20%);
   width: 100%;
   z-index: 10;
 }
-/* media queries// */
-@media screen and (max-width: 768px) {
-  header.header .nav-links {
-    display: none;
-  }
-  .header ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    margin-top: 5rem;
-  }
-  .nav-links-sidebar {
-    position: absolute;
-    display: block;
-    background: #fff;
-    top: 1px;
-    right: 50px;
-    width: 50%;
-    transition: ease 0.5s;
-    height: 55vh;
-    z-index: 5;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 30px;
-  }
 
-  .header ul li {
-    margin-bottom: 30px;
-  }
-  .navbar-items-icon {
-    display: block;
-    position: absolute;
-    right: 30px;
-    color: #000;
-    border: 1px solid #000;
-    padding: 5px 10px;
-  }
-}
 /* ---------------// HEADER */
 
 /* ---------------HOME */
@@ -742,8 +705,62 @@ footer .icon i {
     gap: 5rem;
   }
 }
+/* media queries// */
+@media screen and (max-width: 768px) {
+  header.header .nav-links {
+    display: none;
+  }
+  .header ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 5rem;
+    box-shadow: 0 2px 28 rgba(0, 0, 0, 10%);
+  }
+  .nav-links-sidebar {
+    position: absolute;
+    display: block;
+    background: #fff;
+    top: 1px;
+    right: 50px;
+    width: 50%;
+    transition: ease 0.5s;
+    height: 55vh;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+
+  .header ul li {
+    margin-bottom: 30px;
+  }
+  .navbar-items-icon {
+    display: block;
+    position: absolute;
+    right: 30px;
+    color: #000;
+    border: 1px solid #000;
+    padding: 5px 10px;
+  }
+}
 
 @media screen and (max-width: 375px) {
+  .nav-links-sidebar {
+    position: absolute;
+    display: block;
+    background: #fff;
+    top: 2px;
+    left: 0px;
+    width: 100%;
+    transition: ease 0.5s;
+    height: 72vh;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
   footer .grid1 {
     grid-template-columns: 1fr;
   }
