@@ -22,20 +22,22 @@ a {
   text-decoration: none;
   color: #000;
 }
+
 /* ------------HEADER */
 .header {
   padding: 20px 0;
 }
 .header ul {
-  /* display: inline-block; */
+  display: inline-block;
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 20px;
 }
 .header ul li {
-  /* display: inline-block; */
+  display: inline-block;
 }
+
 .header ul li a {
   font-weight: 500;
   transition: ease 0.3s;
@@ -63,28 +65,31 @@ a {
 }
 /* media queries// */
 @media screen and (max-width: 768px) {
-  header .icon {
+  header.header .nav-links {
     display: none;
   }
-  .nav {
-    display: none;
+  .header ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 5rem;
   }
   .nav-links-sidebar {
     position: absolute;
     display: block;
     background: #fff;
-    top: 75px;
-    left: 50px;
-    width: 100%;
+    top: 1px;
+    right: 50px;
+    width: 50%;
     transition: ease 0.5s;
-    height: 30px;
+    height: 55vh;
     z-index: 5;
-  }
-  .nav-links-sidebar {
     display: flex;
     flex-direction: column;
     margin-bottom: 30px;
   }
+
   .header ul li {
     margin-bottom: 30px;
   }
@@ -529,38 +534,6 @@ h1 {
 /* ---------------//WORKS--*/
 
 /* ---------------BLOG--*/
-
-/* 
-.services {
-  text-align: center;
-  background: #f8f9fe;
-  padding: 50px 0;
-}
-.services .box {
-  text-align: left;
-}
-.services img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-.services .text {
-  background-color: #fff;
-  box-shadow: 0 5px 20px 0 rgba(0 0 0 /6%);
-  padding: 17px;
-  margin-top: -20px;
-  margin-right: 12px;
-  margin-left: 12px;
-  position: relative;
-  z-index: 1;
-}
-.services .text h2 {
-  font-weight: 500;
-  font-size: 17px;
-  margin-bottom: 12px;
-}
-*/
-
 .blog {
   text-align: center;
   background: #f8f9fe;

@@ -20,11 +20,8 @@ const Header = () => {
           <div className="logo">
             <img src="./asset/logo.png" alt="LOGO" />
           </div>
-          <div className="nav">
-            <ul
-              className={sidebar ? "nav-links-sidebar" : "nav-links"}
-              onClick={() => setSidebar(false)}
-            >
+          <div>
+            <ul className={sidebar ? "nav-links-sidebar" : "nav-links"}>
               <li>
                 <Link to="/">Home</Link>
               </li>
